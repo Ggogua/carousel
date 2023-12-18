@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  #carousel-container {
+    position: relative;
+    width: 600px; /* Adjust the width as needed */
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  #carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-item {
+    width: 100%;
+    flex: 0 0 auto;
+  }
+  
+  .arrow {
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #ddd;
+    padding: 10px;
+    border: none;
+    outline: none;
+    transition: background-color 0.3s;
+  }
+  
+  #prev { left: 10px; }
+  #next { right: 10px; }
+  
+  .arrow:hover {
+    background-color: #bbb;
+  }
+  
+  #dots-container {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .dot.active {
+    background-color: #717171;
+  }
+  
